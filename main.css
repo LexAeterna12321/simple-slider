@@ -31,7 +31,7 @@ body {
     left: 0;
     transform: scale(1.2);
     filter: grayscale(100%);
-    animation: layerAnim calc(3 * var(--anim-time)) linear infinite alternate forwards;
+    animation: layerAnim var(--anim-time) linear infinite alternate;
 }
 
 .container::after {
@@ -67,61 +67,22 @@ body {
         opacity: 0;
     }
 
-    5% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 1;
-    }
-
-
-    30% {
-        left: 20px;
-        top: 20px;
+    10% {
         opacity: 0;
     }
 
-    35% {
-        left: 20px;
-        top: 20px;
-        opacity: 0;
-    }
-
-    40% {
+    20% {
         opacity: 1;
     }
 
-    60% {
+    90% {
         opacity: 1;
     }
-
-
-    65% {
-        left: -20px;
-        top: -20px;
-        opacity: 0;
-    }
-
-    70% {
-        left: -20px;
-        top: -20px;
-        opacity: 0;
-    }
-
-    75% {
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
-    }
-
 
     100% {
+        opacity: 0;
         left: 20px;
         top: 20px;
-        opacity: 0;
     }
 }
 
