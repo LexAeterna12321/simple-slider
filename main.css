@@ -30,7 +30,7 @@ body {
     left: 0;
     transform: scale(1.2);
     filter: grayscale(100%);
-    animation: layerAnim 7s linear infinite alternate;
+    animation: layerAnim 7s linear infinite alternate both;
 }
 
 .container::after {
@@ -66,11 +66,11 @@ body {
         opacity: 0;
     }
 
-    5% {
+    10% {
         opacity: 1
     }
 
-    95% {
+    90% {
         opacity: 1
     }
 
